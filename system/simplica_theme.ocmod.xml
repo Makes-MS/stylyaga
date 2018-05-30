@@ -43,7 +43,7 @@
         <![CDATA[<p class="pull-left"><?php echo $powered; ?></p>]]>
       </search>
       <add position="after">
-        <![CDATA[<p class="pull-right">OpenCart Theme By HarndddddddddishDesign</p>]]>
+        <![CDATA[<p class="pull-right">OpenCart Theme By HarnishDesign</p>]]>
       </add>
     </operation> -->
   </file>
