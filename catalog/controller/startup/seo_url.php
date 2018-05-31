@@ -100,6 +100,14 @@ class ControllerStartupSeoUrl extends Controller {
 					}
 
 					unset($data[$key]);
+				}else{
+					$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = '" . $this->db->escape($value) . "'");
+					if (($query->num_rows && $query->row['keyword']) or $value == 'common/home') {
+						$url .= '/' . $query->row['keyword'];
+
+						unset($data[$key]);
+					}
+
 				}
 			}
 		}
